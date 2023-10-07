@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-block: 1em;
+    color: white;
+    background-color: rgb(93, 148, 184);
+    border: 1px solid rgb(93, 148, 184);
+    font-size: 2em;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.menus {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menus > button {
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 1em;
+    border-right: 1px solid black;
+}
+
+.menus > button:hover {
+    opacity: 0.5;
+}
+
+.menus > button:last-child {
+    border: none;
+}
