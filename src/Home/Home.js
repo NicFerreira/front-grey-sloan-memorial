@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import "./Home.css";
+import "./Visualizar-pacientes.js";
 
 function Home() {
     const [currentMenu, setCurrentMenu] = useState()
@@ -7,9 +8,9 @@ function Home() {
     const menus = [
         {
             id: 1,
-            route: '/visualizar-pacientes',
+            route: './Visualizar-pacientes.js',
             label: 'Visualizar Pacientes',
-            content: 'Visualizando pacientes...',
+            content: <visualizarPacientes />
         },
         {
             id: 2,
@@ -26,7 +27,7 @@ function Home() {
         {
             id: 4,
             route: '/cadastrar-prontuarios',
-            label: 'cadastrar Prontuários',
+            label: 'Cadastrar Prontuários',
             content: 'Visualizando cadastro de prontuários...',
         }
     ]
