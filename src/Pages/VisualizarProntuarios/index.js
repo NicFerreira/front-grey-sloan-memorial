@@ -1,10 +1,9 @@
 import React from "react";
-import "./Home.css";
 
-function visualizarPacientes () {
+function VisualizarProntuarios () {
     return (
         <div>
-            <h2>Pacientes cadastrados:</h2>
+            <h2>Prontuários cadastrados:</h2>
             <p>
                 lorem
             </p>
@@ -12,4 +11,4 @@ function visualizarPacientes () {
     );
 }
 
-export default visualizarPacientes;
+export default VisualizarProntuarios;

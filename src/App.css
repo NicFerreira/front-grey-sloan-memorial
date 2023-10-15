@@ -3,3 +3,8 @@
   background-color: rgba(250, 243, 218, 0.842);
   height: 100vh;
 }
+
+.App > div {
+  display: flex;
+  flex-wrap: wrap;
+}

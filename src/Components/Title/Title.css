@@ -1,0 +1,8 @@
+.title {
+    display: flex;
+    font-size: 2em;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    padding-block: 1em;
+    width: 100%;
+}

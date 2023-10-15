@@ -1,0 +1,40 @@
+.table-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+thead, tbody {
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+thead > tr {
+    color: white;
+    background-color: rgb(144, 141, 141);
+    padding-block: 0.3em;
+    
+}
+
+/* nth-child(even) altera as linhas pares */
+tbody > tr:nth-child(even) { 
+    background-color: rgb(223, 212, 212);
+}
+
+/* nth-child(even) altera as linhas ímpares */
+tbody > tr:nth-child(odd) {
+    background-color: white;
+}

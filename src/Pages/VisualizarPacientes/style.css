@@ -1,0 +1,21 @@
+@import '../../Components/Card/Card.css';
+@import '../../Components/Table/Table.css';
+@import '../../Components/Title/Title.css';
+
+.actions {
+    width: 100%;
+    display: flex;
+    padding-block: 1em;
+    justify-content: flex-end;
+}
+
+.actions > button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(93, 148, 184);
+    cursor: pointer;
+    border-radius: 1em;
+    font-size: 1em;
+    padding: 1em;
+}
