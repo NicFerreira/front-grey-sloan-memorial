@@ -61,7 +61,7 @@ function VisualizarPacientes () {
                                 <td>{dado.sexo}</td>
                                 <td>{dado.endereco}</td>
                                 <td>{dado.telefone}</td>
-                                <td><button onClick={() => removerPaciente(dado.id)}>Remover Paciente</button></td>
+                                <td><button className = 'remove' onClick={() => removerPaciente(dado.id)}>Remover paciente</button></td>
                             </tr>
                         ))
                     }

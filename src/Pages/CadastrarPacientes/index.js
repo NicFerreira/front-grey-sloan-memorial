@@ -40,8 +40,8 @@ function CadastrarPacientes () {
                 <label htmlFor = 'telefone'>Telefone</label>
                 <input name="telefone" id='telefone' placeholder="Digite seu telefone..." />
 
-                <button type="reset">Cancelar</button>
-                <button type="submit">Salvar</button>
+                <button className = 'remove' type="reset">Cancelar</button>
+                <button className = 'submit' type="submit">Salvar</button>
             </form>
         </div>
     );
