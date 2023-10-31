@@ -5,7 +5,7 @@ import './style.css';
 function CadastrarProntuarios () {
     const [dados, setDados] = useState(sessionStorage.getItem('pacientes') ? JSON.parse(sessionStorage.getItem('pacientes')) : [])
     const [mostrarNovoForm, setMostrarNovoForm] = useState(false)
-    const [novoProntuario, setNovoProntuario] = useState('')
+    const [novoProntuario, setNovoProntuario] = useState([])
         
     const adicionarProntuario = (id) => {
         const dadosCopy = [...dados]
@@ -22,15 +22,10 @@ function CadastrarProntuarios () {
 
     // const prontuarioSubmitForm = (event) => {
     //     event.preventDefault()
-    //     const formValues = dados.prontuario(event.target)
-    //     const formObject = dados.id
+    //     const prontForm = dados.prontuario(event.target)
 
-    //     formValues.forEach((value, key) => {
-    //         formObject[key] = value
-    //     })
+        
 
-    //     const previousList = sessionStorage.getItem('pacientes') ? JSON.parse(sessionStorage.getItem('pacientes')) : []
-    //     sessionStorage.setItem('pacientes', JSON.stringify([...previousList, formObject]))
 
     //     alert('Prontuário cadastrado!')
     //     event.target.reset();
@@ -67,7 +62,7 @@ function CadastrarProntuarios () {
         <div>
             {mostrarNovoForm && (
                 <div className = 'novo-prontuario'>
-                    <form>
+                    <form> 
                         <label htmlFor = 'anamnese'>Anamnese</label>
                         <input name="anamnese" id='anamnese' placeholder="Anamnese" />
                         
