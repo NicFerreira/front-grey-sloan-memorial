@@ -26,7 +26,7 @@ const router = createBrowserRouter([
             element: <CadastrarPacientes />,
         },
         {
-            path: "/CadastrarProntuarios",
+            path: "/CadastrarProntuarios/:id",
             element: <CadastrarProntuarios />,
         },
       ]

@@ -20,11 +20,6 @@ function Navbar() {
             route: '/CadastrarPacientes',
             label: 'Cadastrar Pacientes',
         },
-        {
-            id: 4,
-            route: '/CadastrarProntuarios',
-            label: 'Cadastrar Prontuários',
-        },
     ]
 
     return(

@@ -61,7 +61,10 @@ function VisualizarPacientes () {
                                 <td>{dado.sexo}</td>
                                 <td>{dado.endereco}</td>
                                 <td>{dado.telefone}</td>
-                                <td><button className = 'remove' onClick={() => removerPaciente(dado.id)}>Remover paciente</button></td>
+                                <td>
+                                    <button className = 'remove' onClick={() => removerPaciente(dado.id)}>Remover paciente</button>
+                                    <button className = 'remove' onClick={() => navigate(`/CadastrarProntuarios/${dado.id}`)}>Cadastrar prontuário</button>
+                                </td>
                             </tr>
                         ))
                     }
