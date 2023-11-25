@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import './style.css';
 
 function VisualizarProntuarios () {
     const pacientes = useRef(sessionStorage.getItem('pacientes') ? JSON.parse(sessionStorage.getItem('pacientes')) : [])
@@ -25,7 +26,7 @@ function VisualizarProntuarios () {
                         ))
                     }
                 </select>
-                <button type="submit">Pesquisar</button>
+                <button className = 'submit' type="submit">Pesquisar</button>
             </form>
             {
                 !!paciente?.prontuario&& (

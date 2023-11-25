@@ -30,8 +30,11 @@ function CadastrarProntuarios () {
     }
     
     return (
-        <div>
-            <div className = 'novo-prontuario'>
+        <div className="card">
+            <span className = 'title'>
+                Cadastro de prontuário:
+            </span>
+            <div>
                 <form onSubmit={ prontuarioSubmitForm }> 
                     <label htmlFor = 'anamnese'>Anamnese</label>
                     <input name="anamnese" id='anamnese' placeholder="Anamnese" />
