@@ -15,11 +15,15 @@ function CadastrarProntuarios () {
         formData.forEach((value, key) => {
             formObject[key] = value
         })
-        
+    
         const pacientesCopy = [...pacientes]
         pacientesCopy.forEach((paciente) => {
             if (paciente.id.toString() === id) {
-                paciente.prontuario.push(formObject)
+                if(!!paciente.prontuario) {
+                    paciente.prontuario.push(formObject)
+                } else {
+                    paciente['prontuario'] = [formObject]
+                }
             }
         })
         setPacientes(pacientesCopy)

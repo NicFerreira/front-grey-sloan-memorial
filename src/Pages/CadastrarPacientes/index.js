@@ -6,6 +6,7 @@ function CadastrarPacientes () {
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
     const handleSubmitForm = (paciente) => {
         paciente.id = Math.floor(Math.random() * 1000)
+        paciente.prontuario = []
         const previousList = sessionStorage.getItem('pacientes') ? JSON.parse(sessionStorage.getItem('pacientes')) : []
         sessionStorage.setItem('pacientes', JSON.stringify([...previousList, paciente]))
 
